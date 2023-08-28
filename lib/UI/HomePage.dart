@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../Model Class/bitcoin_Model.dart';
 import '../Service/BitcoinService.dart';
 
