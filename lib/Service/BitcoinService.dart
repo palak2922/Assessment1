@@ -4,6 +4,8 @@ import 'package:bitcointracker/Model%20Class/bitcoin_Model.dart';
 import 'package:http/http.dart' as http;
 
 
+
+
 class BitCoinService{
 
   dynamic handlebitcoinResponse(http.Response response) {
@@ -20,7 +22,7 @@ class BitCoinService{
     }
   }
 
-  Future<BitCoin> GetDetails() async {
+  Future GetDetails() async {
     try {
       var response = await http.get(
         Uri.parse('https://api.coindesk.com/v1/bpi/currentprice.json'),

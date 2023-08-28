@@ -2,6 +2,8 @@
 //
 //     final bitCoin = bitCoinFromJson(jsonString);
 
+
+
 import 'dart:convert';
 
 BitCoin bitCoinFromJson(String str) => BitCoin.fromJson(json.decode(str));

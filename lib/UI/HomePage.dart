@@ -13,8 +13,8 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
 
-  List Price = [];
-  List bitname = [];
+  List Price = ["Price"];
+  List bitname = ["Bitcoin"];
   bool isloading = false;
   late BitCoin _coins;
   BitCoinService bitcoinService = BitCoinService();
@@ -49,9 +49,11 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: Colors.teal.shade500,
       body: isloading ?
-      const CircularProgressIndicator(
-        color: Colors.white,
-        strokeWidth: 60,
+      Center(
+        child: const CircularProgressIndicator(
+          color: Colors.white,
+          strokeWidth: 5,
+        ),
       ) :
       SafeArea(
         top: true,
